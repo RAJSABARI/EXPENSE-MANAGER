@@ -100,6 +100,7 @@ public class transcation1 extends AppCompatActivity {
                     expensemanager.setUuid(uuvid);
                     expensemanager.setCreatetime(createTime);
                     expensemanager.setType(type);
+
                     realm.executeTransaction(new Realm.Transaction() {
                         @Override
                         public void execute(Realm realm) {
